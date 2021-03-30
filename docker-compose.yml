@@ -11,7 +11,7 @@ services:
   web:
     build: .
     restart: always
-    command: bash -c "bundle exec rake db:create db:migrate && bundle exec rackup -p 9292 --host '0.0.0.0'"
+    command: bash -c "bundle exec rake db:create db:migrate && bundle exec puma -p 9292 -b 'tcp://0.0.0.0'"
     volumes:
       - .:/echo
     ports:

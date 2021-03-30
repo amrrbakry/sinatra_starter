@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 9292
 
-CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", "9292"]
+CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0", "-p", "9292"]

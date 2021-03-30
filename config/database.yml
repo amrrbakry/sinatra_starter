@@ -3,9 +3,7 @@ development:
   :encoding: unicode
   :pool: 5
   :database: sinatra_starter_dev
-  :host: db
-  :user: postgres
-  :password: password
+  :host: localhost
 
 test:
   :adapter: postgres

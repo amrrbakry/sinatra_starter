@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'dry-validation'
 gem 'pg'
+gem 'puma'
 gem 'sequel'
 gem 'sinatra', github: 'sinatra/sinatra'
 
