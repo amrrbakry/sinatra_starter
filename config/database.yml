@@ -1,0 +1,13 @@
+development:
+  :adapter: postgres
+  :encoding: unicode
+  :pool: 5
+  :database: sinatra_starter_dev
+  :host: db
+  :user: postgres
+  :password: password
+
+test:
+  :adapter: postgres
+  :encoding: unicode
+  :database: sinatra_starter_test
